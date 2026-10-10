@@ -1,1 +1,6 @@
-PLACEHOLDER_CONTENT
+<!DOCTYPE html>
+<html><head><title>Riyadh Offers Map</title><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><style>html,body,#map{height:100%;margin:0}</style></head><body><div id="map"></div><script>
+const map = L.map('map').setView([24.80, 46.70], 11);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: '&copy; OpenStreetMap'}).addTo(map);
+L.marker([24.844, 46.683]).addTo(map).bindPopup('Diyar 31 Al-Narjis - 3BR apartments from 1.36M SAR');
+</script></body></html>
